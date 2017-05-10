@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="space3d">
+			<div id="carousel">
+				<figure id="figure1">
+					<img src="images/gower_wave.jpg" alt="Gower Waves"/>
+					<figcaption>The Wave</figcaption>
+				</figure>	
+				<figure id="figure2">
+					<img src="images/harbour_night.jpg" alt="The Harbour Night"/>
+					<figcaption>The Harbour</figcaption>
+				</figure>	
+				<figure id="figure3">
+					<img src="images/sunset_llangennith.jpg" alt="Sunset in Llangennith"/>
+					<figcaption>The Sunset</figcaption>
+				</figure>
+				<figure id="figure4">
+					<img src="images/sunset_wormsHead-2.jpg" alt="Sunset in Worms Head"/>
+					<figcaption>Worms Head Sunset</figcaption>
+				</figure>		
+				<figure id="figure5">
+					<img src="images/Pobbles-Bay_CCS_P-TJ.jpg" alt="Pobbles Bay"/>
+					<figcaption>Pobbles Bay</figcaption>
+				</figure>				
+			</div>
+		</div>
+		
+		<form name="buttons">
+			<input type="button" value="<" onclick="RotateCarousel(1);"/>
+			<input type="button" value=">" onclick="RotateCarousel(-1);"/>
+			<input type="button" value="Start Carousel" onclick="StartCarouselSlideshow(1);"/>
+			<input type="button" value="Stop Carousel" onclick="StopCarouselSlideshow(-1);"/>
+		</form>
+		
+    </div>
+	
+	<script src="java.js"></script>
+</body>
+</html>
